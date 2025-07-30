@@ -28,13 +28,18 @@ public class CharacterFrequencySort {
             }
         });
 
-        // Step 4: Convert to array
+        // Step 4: Print characters with frequencies
+        for (Character c : characters) {
+            System.out.println(c + " -> " + freqMap.get(c));
+        }
+
+        // Step 5: Convert to array and return
         return characters.toArray(new Character[0]);
     }
 
     public static void main(String[] args) {
-        String s = "banana";
+        String s = "ratan";
         Character[] result = sortCharacters(s);
-        System.out.println(Arrays.toString(result)); // [a, n, b]
+        System.out.println("Sorted characters: " + Arrays.toString(result));
     }
 }
