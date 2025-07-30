@@ -1,0 +1,15 @@
+@"
+# Ignore Java build files
+*.class
+*.jar
+*.war
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+"@ | Out-File -Encoding UTF8 .gitignore
