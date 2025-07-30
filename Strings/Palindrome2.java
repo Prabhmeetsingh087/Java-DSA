@@ -6,7 +6,7 @@ public class Palindrome2 {
         String[] words = sentence.split("\\s+");
 
         for (String word : words) {
-            // Clean word (remove non-alphanumeric and make lowercase)
+
             String cleaned = word.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
 
             if (!cleaned.isEmpty()) {
